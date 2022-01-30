@@ -15,3 +15,5 @@
 [vulnerabilities-url]: https://snyk.io/test/npm/query-selector-all-shadow-root
 [install-size]: https://packagephobia.now.sh/badge?p=query-selector-all-shadow-root
 [install-size-url]: https://packagephobia.now.sh/result?p=query-selector-all-shadow-root
+
+https://stackblitz.com/edit/typescript-byufc6?file=index.ts

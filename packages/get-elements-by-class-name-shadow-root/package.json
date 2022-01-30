@@ -1,0 +1,37 @@
+{
+  "name": "get-elements-by-class-name-shadow-root",
+  "description": "",
+  "version": "0.0.1",
+  "license": "EUPL-1.2",
+  "scripts": {
+    "build:cjs": "tsc -m commonjs --outDir cjs",
+    "build:esm": "tsc -m esnext --outDir esm",
+    "build:types": "tsc -d --outDir types && rm -rf types/*.js types/*.map types/**/*.js types/**/*.map",
+    "build:umd": "tsc -m umd --outDir umd",
+    "build:cleanup": "rm -rf cjs esm types umd",
+    "build": "npm run build:cleanup && npm run build:cjs && npm run build:esm && npm run build:types && npm run build:umd",
+    "prepack": "npm run build"
+  },
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "types/index.d.ts",
+  "exports": {
+    "require": "./cjs/index.js",
+    "import": "./esm/index.js"
+  },
+  "dependencies": {
+    "query-selector-all-shadow-root": "0.0.1"
+  },
+  "devDependencies": {
+    "typescript": "4.5.5"
+  },
+  "files": [
+    "cjs",
+    "esm",
+    "types",
+    "umd"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
