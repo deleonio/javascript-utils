@@ -1,6 +1,6 @@
 import { querySelectorAll } from "query-selector-all-shadow-root";
 
-export const getElementByTagName = <T extends Element>(
+export const getElementsByTagName = <T extends Element>(
   tagName: string,
   node?: Document | HTMLElement | ShadowRoot
 ): T[] => {

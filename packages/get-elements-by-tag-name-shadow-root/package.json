@@ -1,7 +1,7 @@
 {
   "name": "get-elements-by-tag-name-shadow-root",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "EUPL-1.2",
   "scripts": {
     "build:cjs": "tsc -m commonjs --outDir cjs",
