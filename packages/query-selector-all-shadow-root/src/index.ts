@@ -22,7 +22,7 @@ export const querySelectorAll = <T extends Element>(
     pushNodes<T>(domNodes, (node as Document).querySelectorAll<T>(selector));
     const nodeList: NodeListOf<HTMLElement> = (
       node as Document
-    ).querySelectorAll<HTMLElement>('[class="hydrated"]');
+    ).querySelectorAll<HTMLElement>('[class*="hydrated"]');
     for (let i = 0; i < nodeList.length; i++) {
       const shadowRoot: ShadowRoot = nodeList[i].shadowRoot as ShadowRoot;
       if (typeof shadowRoot === "object" && shadowRoot !== null) {

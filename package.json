@@ -1,5 +1,12 @@
 {
+  "devDependencies": {
+    "lerna": "4.0.0",
+    "npm-check-updates": "12.2.1"
+  },
   "private": true,
+  "scripts": {
+    "update": "lerna exec -- ncu -t minor && lerna exec -- npm i"
+  },
   "workspaces": [
     "./packages/*"
   ]

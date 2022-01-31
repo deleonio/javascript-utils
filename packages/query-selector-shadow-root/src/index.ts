@@ -10,7 +10,7 @@ export const querySelector = <T extends Element>(
     let domNode: T | null = node.querySelector<T>(selector);
     if (domNode === null) {
       const nodeList: NodeListOf<HTMLElement> =
-        node.querySelectorAll<HTMLElement>('[class="hydrated"]');
+        node.querySelectorAll<HTMLElement>('[class*="hydrated"]');
       for (let i = 0; i < nodeList.length; i++) {
         const shadowRoot: ShadowRoot = nodeList[i].shadowRoot as ShadowRoot;
         if (typeof shadowRoot === "object" && shadowRoot !== null) {
