@@ -1,7 +1,7 @@
 {
   "name": "get-element-by-id-shadow-root",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "license": "EUPL-1.2",
   "scripts": {
     "build:cjs": "tsc -m commonjs --outDir cjs",
@@ -20,7 +20,7 @@
     "import": "./esm/index.js"
   },
   "dependencies": {
-    "query-selector-shadow-root": "0.0.1"
+    "query-selector-shadow-root": "0.0.3"
   },
   "devDependencies": {
     "typescript": "4.5.5"

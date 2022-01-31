@@ -1,7 +1,7 @@
 {
   "name": "shadow-root",
   "description": "",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "EUPL-1.2",
   "scripts": {
     "build:cjs": "tsc -m commonjs --outDir cjs",
@@ -20,12 +20,12 @@
     "import": "./esm/index.js"
   },
   "dependencies": {
-    "get-element-by-id-shadow-root": "0.0.1",
-    "get-elements-by-class-name-shadow-root": "0.0.2",
-    "get-elements-by-name-shadow-root": "0.0.2",
-    "get-elements-by-tag-name-shadow-root": "0.0.2",
-    "query-selector-all-shadow-root": "0.0.1",
-    "query-selector-shadow-root": "0.0.1"
+    "get-element-by-id-shadow-root": "0.0.3",
+    "get-elements-by-class-name-shadow-root": "0.0.3",
+    "get-elements-by-name-shadow-root": "0.0.3",
+    "get-elements-by-tag-name-shadow-root": "0.0.3",
+    "query-selector-all-shadow-root": "0.0.3",
+    "query-selector-shadow-root": "0.0.3"
   },
   "devDependencies": {
     "typescript": "4.5.5"
