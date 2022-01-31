@@ -5,7 +5,11 @@
   },
   "private": true,
   "scripts": {
-    "update": "lerna exec -- ncu -t minor && lerna exec -- npm i"
+    "publish": "lerna exec --no-bail --stream -- npm publish",
+    "release": "lerna version patch --yes --exact",
+    "reinstall": "npm run remove && npm i & npm run update",
+    "remove": "lerna exec --stream -- rm -rf node_modules package-lock.json",
+    "update": "lerna exec --stream -- ncu -t minor && lerna exec --stream -- npm i"
   },
   "workspaces": [
     "./packages/*"
